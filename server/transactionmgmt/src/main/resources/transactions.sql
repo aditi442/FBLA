@@ -1,0 +1,1 @@
+insert into transactions_db.transactions (description, amount, user_id, type, date) values ('initial amount', 10000, 1, 'INCOME', current_date());
