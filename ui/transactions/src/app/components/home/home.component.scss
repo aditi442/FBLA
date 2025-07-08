@@ -1,0 +1,62 @@
+.home-container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 30px;
+  //display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Use a clean and readable font */
+  background: #fff; /* White background for the box */
+  justify-content: center; /* Horizontally centers the container */
+  align-items: center;     /* Vertically centers the container */
+  place-items: center;
+   border-radius: 10px; /* Rounded corners */
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+   margin-top: 50px;
+  
+  }
+  
+  h1 {
+    color: #11204D;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #11204D;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #527DB8;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: #11204D;
+  }
+  
+#slogan{
+  text-align: center;
+  color: #c69f60;
+}
+
+#info{
+  text-align: center;
+  color: #11204D;
+}
+
+#home_buttons{
+  text-align: center;
+  align-items: center;
+}
+.login-container {
+  align-items: center;
+  place-items: center;
+}

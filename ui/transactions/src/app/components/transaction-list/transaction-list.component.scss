@@ -1,0 +1,176 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  color: #333;
+}
+
+.transaction-list-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  //margin-bottom: 20px;
+  width: 75%;
+  align-items: center;
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+.transaction-list-container h2 {
+  color: #11204D;
+  font-size: 1.5rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-container input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #11204D;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #527DB8;
+}
+
+.panel {
+  margin-bottom: 20px;
+  width:100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 70px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="date"],
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 75%;
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+/*
+.table thead th {
+  background-color: #006F63;
+  color: white;
+}
+*/
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-transactions {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #527DB8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.transaction-table button:last-child {
+  background-color: #11204D;
+}
+
+.no-transactions {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}
+
+#filter{
+  background-color:#cfb158;
+  padding: 12px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: auto;
+  margin-top: 25px;
+  max-height: 45px;
+  width: 10%;
+  margin-right: 30px;
+  font-size: 15px;
+  &:hover {
+    background-color: #c69f60;
+  }
+}

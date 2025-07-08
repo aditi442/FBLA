@@ -1,0 +1,35 @@
+ header {
+    /* Background with gradient from black to dark blue */
+    background-image: linear-gradient(to right, black, #11204d, #11204d, #11204d, black);
+    padding: 10px 0;
+}
+
+nav {
+    /* Flexbox for navigation layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    /* Set logo image height */
+    height: 60px;
+}
+
+ul {
+    /* Remove list style and set flex layout for navigation items */
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    /* Style for links */
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}

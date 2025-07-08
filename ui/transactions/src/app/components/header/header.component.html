@@ -1,0 +1,22 @@
+<header>
+    <nav>
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="assets/logo6.jpg" alt="Logo">
+      </div>
+      
+      <ul>
+        <!-- Navigation links -->
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/transaction-list">View Transactions</a></li>
+        <li><a routerLink="/spending-pattern">Spending Pattern</a></li>
+        
+        <!-- Login link (visible if not logged in) -->
+        <li><a routerLink="/login" *ngIf="!isLoggedIn">Login</a></li>
+        
+        <!-- Logout link (visible if logged in) -->
+        <li><a (click)="logout()" *ngIf="isLoggedIn">Logout</a></li>
+      </ul>
+    </nav>
+</header>
+    

@@ -1,0 +1,45 @@
+<div class="spending-pattern-container">
+  <!-- Title for the Spending Pattern section -->
+  <h2 class="title">Spending Pattern</h2>
+  
+  <div class="pattern-grid">
+    <!-- Card for displaying weekly spending -->
+    <div class="pattern-card weekly">
+      <div class="card-icon">
+        <!-- Icon representing a week -->
+        <i class="fas fa-calendar-week"></i>
+      </div>
+      <div class="card-content">
+        <h3>Weekly Spending</h3>
+        <!-- Display weekly spending, formatted as currency -->
+        <p class="amount">{{ spendingPattern.weeklySpending | currency }}</p>
+      </div>
+    </div>
+
+    <!-- Card for displaying monthly spending -->
+    <div class="pattern-card monthly">
+      <div class="card-icon">
+        <!-- Icon representing a month -->
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="card-content">
+        <h3>Monthly Spending</h3>
+        <!-- Display monthly spending, formatted as currency -->
+        <p class="amount">{{ spendingPattern.monthlySpending | currency }}</p>
+      </div>
+    </div>
+
+    <!-- Card for displaying current balance -->
+    <div class="pattern-card balance">
+      <div class="card-icon">
+        <!-- Icon representing a wallet -->
+        <i class="fas fa-wallet"></i>
+      </div>
+      <div class="card-content">
+        <h3>Current Balance</h3>
+        <!-- Display total current balance, formatted as currency -->
+        <p class="amount">{{ spendingPattern.totalCurrentBalance | currency }}</p>
+      </div>
+    </div>
+  </div>
+</div>

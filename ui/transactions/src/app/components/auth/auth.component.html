@@ -1,0 +1,30 @@
+<!-- auth.component.html -->
+<div class="container">
+    <h1 class="heading">Transaction App</h1>
+    <h3 class="title">Login & Registration</h3>
+  
+    <div class="form-container" [class.slide-signup]="!isLogin">
+      <div class="slider"></div>
+      <div class="btn-group">
+        <button (click)="toggleForm()" [class.active]="isLogin">Login</button>
+        <button (click)="toggleForm()" [class.active]="!isLogin">Signup</button>
+      </div>
+  
+      <div class="form-section">
+        <form *ngIf="isLogin" class="login-form">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+  
+        <form *ngIf="!isLogin" class="signup-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
